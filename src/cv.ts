@@ -607,7 +607,7 @@ export const CV = {
   "references": [],
   "projects": [
     {
-      "name": " OpenAI-ChatBot-UI",
+      "name": "OpenAI-ChatBot-UI",
       "github": "",
       "image": {
         "url":
