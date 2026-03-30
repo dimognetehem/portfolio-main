@@ -1,0 +1,15 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Posts from '@src/components/sections/Posts.astro';
+
+const title = 'All posts';
+const description = 'Articles, guides, tutorials about web development.';
+---
+
+<BaseLayout title={title} description={description}>
+	<div class='container'>
+		<div class='max-w-screen-md mx-auto pt-28 pb-16'>
+			<Posts />
+		</div>
+	</div>
+</BaseLayout>

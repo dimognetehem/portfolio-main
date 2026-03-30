@@ -4,39 +4,26 @@ import sitemap from "@astrojs/sitemap";
 import tailwind from "@astrojs/tailwind";
 import { autoNewTabExternalLinks } from "./src/autoNewTabExternalLinks";
 import astroIcon from "astro-icon";
-// import playformCompress from "@playform/compress";
 import partytown from "@astrojs/partytown";
-
 import react from "@astrojs/react";
+import vercel from "@astrojs/vercel/serverless";
 
-import cloudflare from "@astrojs/cloudflare";
-
-// https://astro.build/config
 export default defineConfig({
-  vite: {
-    optimizeDeps: {
-      exclude: ["fsevents"],
-    },
-    define: {
-      __vite__injectQuery: false,
-    },
-  },
-
   site: "https://dimognetehem.vercel.app",
-
+  output: "server",
+  adapter: vercel(),
+  
   integrations: [
     mdx(),
-    sitemap(),
-    tailwind(
-      {
-        applyBaseStyles: false,
-      },
-    ),
+    //sitemap(),
+    tailwind({
+      applyBaseStyles: false,
+    }),
     partytown(),
     astroIcon({
       include: {
         mdi: ["*"],
-        "ri": ["*"],
+        ri: ["*"],
         "simple-icons": ["*"],
       },
     }),
@@ -44,22 +31,17 @@ export default defineConfig({
   ],
 
   markdown: {
-    extendDefaultPlugins: true,
     rehypePlugins: [[autoNewTabExternalLinks, {
       domain: "dimognetehem.vercel.app",
     }]],
   },
 
-  output: "server",
-  build: {
-    inlineStylesheets: "never",
-    assets: "assets",
-    excludeMiddleware: true,
-    split: true,
-  },
-  compressHTML: true,
-  optimizeImages: true,
-  optimizeCss: true,
-  adapter: cloudflare(),
+  vite: {
+    optimizeDeps: {
+      exclude: ["fsevents"],
+    },
+    define: {
+      __vite__injectQuery: false,
+    },
+  }
 });
-

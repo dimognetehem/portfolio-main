@@ -1,0 +1,280 @@
+<!DOCTYPE html><html lang="en"> <head><!-- Global Metadata --><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="/_astro/portrait_black_and_white.Cw1XbfSF.png"><meta name="generator" content="Astro v4.16.19"><!-- Canonical URL --><link rel="canonical" href="https://dimognetehem.vercel.app/svelte-dynamic-image-grid/"><!-- Primary Meta Tags --><title>How to Create an Animated Image Grid Using Svelte</title><meta name="title" content="How to Create an Animated Image Grid Using Svelte"><meta name="description" content="How to Create an Animated Image Grid Using Svelte"><!-- Open Graph / Facebook --><meta property="og:type" content="website"><meta property="og:url" content="https://dimognetehem.vercel.app/svelte-dynamic-image-grid/"><meta property="og:title" content="How to Create an Animated Image Grid Using Svelte"><meta property="og:description" content="How to Create an Animated Image Grid Using Svelte"><meta property="og:image" content="https://dimognetehem.vercel.app/_astro/placeholder.1WQRLJGH.jpg"><!-- Twitter --><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="https://dimognetehem.vercel.app/svelte-dynamic-image-grid/"><meta property="twitter:title" content="How to Create an Animated Image Grid Using Svelte"><meta property="twitter:description" content="How to Create an Animated Image Grid Using Svelte"><meta property="twitter:image" content="https://dimognetehem.vercel.app/_astro/placeholder.1WQRLJGH.jpg"><link rel="stylesheet" href="/_astro/_slug_.BSdmrN82.css">
+<style>.toc-list[data-astro-cid-awg4b4gg]::-webkit-scrollbar{width:5px}.toc-list[data-astro-cid-awg4b4gg]::-webkit-scrollbar-track{background:transparent}.toc-list[data-astro-cid-awg4b4gg]::-webkit-scrollbar-thumb{background:#eee;border-radius:5px}.dark .toc-list[data-astro-cid-awg4b4gg]::-webkit-scrollbar-thumb{background:#2e2e2e;border-radius:5px}
+</style><script type="module" src="/_astro/hoisted.7sC7z5cD.js"></script>
+<script>!(function(w,p,f,c){if(!window.crossOriginIsolated && !navigator.serviceWorker) return;c=w[p]=Object.assign(w[p]||{},{"lib":"/~partytown/","debug":false});c[f]=(c[f]||[])})(window,'partytown','forward');/* Partytown 0.11.2 - MIT QwikDev */
+const t={preserveBehavior:!1},e=e=>{if("string"==typeof e)return[e,t];const[n,r=t]=e;return[n,{...t,...r}]},n=Object.freeze((t=>{const e=new Set;let n=[];do{Object.getOwnPropertyNames(n).forEach((t=>{"function"==typeof n[t]&&e.add(t)}))}while((n=Object.getPrototypeOf(n))!==Object.prototype);return Array.from(e)})());!function(t,r,o,i,a,s,c,l,d,p,u=t,f){function h(){f||(f=1,"/"==(c=(s.lib||"/~partytown/")+(s.debug?"debug/":""))[0]&&(d=r.querySelectorAll('script[type="text/partytown"]'),i!=t?i.dispatchEvent(new CustomEvent("pt1",{detail:t})):(l=setTimeout(v,(null==s?void 0:s.fallbackTimeout)||1e4),r.addEventListener("pt0",w),a?y(1):o.serviceWorker?o.serviceWorker.register(c+(s.swPath||"partytown-sw.js"),{scope:c}).then((function(t){t.active?y():t.installing&&t.installing.addEventListener("statechange",(function(t){"activated"==t.target.state&&y()}))}),console.error):v())))}function y(e){p=r.createElement(e?"script":"iframe"),t._pttab=Date.now(),e||(p.style.display="block",p.style.width="0",p.style.height="0",p.style.border="0",p.style.visibility="hidden",p.setAttribute("aria-hidden",!0)),p.src=c+"partytown-"+(e?"atomics.js?v=0.11.2":"sandbox-sw.html?"+t._pttab),r.querySelector(s.sandboxParent||"body").appendChild(p)}function v(n,o){for(w(),i==t&&(s.forward||[]).map((function(n){const[r]=e(n);delete t[r.split(".")[0]]})),n=0;n<d.length;n++)(o=r.createElement("script")).innerHTML=d[n].innerHTML,o.nonce=s.nonce,r.head.appendChild(o);p&&p.parentNode.removeChild(p)}function w(){clearTimeout(l)}s=t.partytown||{},i==t&&(s.forward||[]).map((function(r){const[o,{preserveBehavior:i}]=e(r);u=t,o.split(".").map((function(e,r,o){var a;u=u[o[r]]=r+1<o.length?u[o[r]]||(a=o[r+1],n.includes(a)?[]:{}):(()=>{let e=null;if(i){const{methodOrProperty:n,thisObject:r}=((t,e)=>{let n=t;for(let t=0;t<e.length-1;t+=1)n=n[e[t]];return{thisObject:n,methodOrProperty:e.length>0?n[e[e.length-1]]:void 0}})(t,o);"function"==typeof n&&(e=(...t)=>n.apply(r,...t))}return function(){let n;return e&&(n=e(arguments)),(t._ptf=t._ptf||[]).push(o,arguments),n}})()}))})),"complete"==r.readyState?h():(t.addEventListener("DOMContentLoaded",h),t.addEventListener("load",h))}(window,document,navigator,top,window.crossOriginIsolated);;(e=>{e.addEventListener("astro:before-swap",e=>{let r=document.body.querySelector("iframe[src*='/~partytown/']");if(r)e.newDocument.body.append(r)})})(document);</script></head> <body class="relative bg-skin-fill font-sans"> <header id="site-header" class="flex fixed top-1 items-center w-full transition duration-300 z-[999] border-[var(--soft-border-color)]"> <div class="container bg-transparent"> <nav class="flex gap-4 items-center justify-between py-3"> <h2 class="m-0 opacity-0 pointer-events-none"> <a href="" class="flex gap-4 items-center text-xl font-black uppercase"></a> </h2> <div class="w-auto max-w-full px-3 z-[999]"> <div class="flex px-2.5 bg-white/10 ring-1 shadow-skin-muted shadow ring-skin-muted backdrop-blur-md leading-tight rounded-full"> <div class="px-2.5 text-sm"> <a href="/" class="py-3 flex items-center text-zinc-600 dark:text-zinc-200 hover:text-zinc-900 dark:hover:text-zinc-50" aria-label="Home">  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>  </a> </div> <div class="px-2.5 text-sm"> <a href="/#experience" class="py-3 flex items-center text-zinc-600 dark:text-zinc-200 hover:text-zinc-900 dark:hover:text-zinc-50"> Experience </a> </div><div class="px-2.5 text-sm"> <a href="/#projects" class="py-3 flex items-center text-zinc-600 dark:text-zinc-200 hover:text-zinc-900 dark:hover:text-zinc-50"> Projects </a> </div><div class="px-2.5 text-sm"> <a href="/#posts" class="py-3 flex items-center text-zinc-600 dark:text-zinc-200 hover:text-zinc-900 dark:hover:text-zinc-50"> Posts </a> </div> </div> </div> <div class="flex"> <button class="p-3" id="themeToggle" aria-label="Theme mode"> <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgba(var(--color-text-base))" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg> <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgba(var(--color-text-base))" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon"> <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg> </button> </div> </nav> </div>  <script>
+		const theme = (() => {
+			if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+				return 'dark';
+			}
+			if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+				return localStorage.getItem('theme');
+			}
+			return 'light';
+		})();
+
+		if (theme === 'light') {
+			document.documentElement.classList.remove('dark');
+		} else {
+			document.documentElement.classList.add('dark');
+		}
+
+		window.localStorage.setItem('theme', theme || '');
+
+		function sendMessage(message) {
+			const iframe = document.querySelector('iframe.giscus-frame');
+			if (!iframe) return;
+			iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+		}
+
+		const handleToggleClick = () => {
+			const element = document.documentElement;
+			element.classList.toggle('dark');
+
+			const isDark = element.classList.contains('dark');
+			if (isDark) {
+				sendMessage({
+					setConfig: {
+						theme: 'dark_dimmed'
+					}
+				});
+			} else {
+				sendMessage({
+					setConfig: {
+						theme: 'light'
+					}
+				});
+			}
+			localStorage.setItem('theme', isDark ? 'dark' : 'light');
+		};
+		document.getElementById('themeToggle')?.addEventListener('click', handleToggleClick);
+	</script> </header> <div class="pointer-events-none fixed bottom-0 left-0 right-0 top-0 print:hidden" style="mask-image: radial-gradient(circle, transparent, black); -webkit-mask-image: radial-gradient(circle, transparent, black);"> <canvas id="artPlumCanvas" width="400" height="400"></canvas> </div>  <div>  <div class="container lg:flex gap-10"> <main class="overflow-hidden grow pt-28 pb-16 grid place-items-center"> <article> <div class="prose
+  prose-h1:font-[800] prose-h1:my-4 prose-h1:text-2xl sm:prose-h1:text-[2rem]/[1.3]
+  prose-h2:mt-6 prose-h2:mb-3 prose-h2:text-2xl sm:prose-h2:text-3xl prose-h2:font-bold
+  prose-h3:mt-5 prose-h3:mb-2 prose-h3:text-xl sm:prose-h3:text-2xl
+  prose-h4:mt-3 prose-h4:mb-0 prose-img:rounded-md prose-h3:target:pt-20">  <div> <div class="text-sm font-[500] mt-2 sm:mt-0 py-1 md:text-right flex flex-col sm:flex-row gap-3 sm:justify-between sm:items-center"> <div class="flex gap-2"> <a class="border border-skin-muted rounded-2xl
+                          text-sm text-skin-base no-underline px-2 py-0.5
+                          transition-all duration-700
+                          " href="/tags/javascript-sveltejs-css"> Javascript, SvelteJs, CSS </a> </div> <div> 
+Published on <strong> <time datetime="2024-08-10T00:00:00.000Z"> Aug 10, 2024 </time> </strong>  </div> </div> </div> <div class="py-3 overflow-hidden">  <div class="relative w-full h-96 mb-4 rounded-md overflow-hidden bg-skin-muted/20 backdrop-blur-md"> <video class="absolute inset-0 w-full h-full object-center not-prose" autoplay muted loop> <source src="/dynamic_image_grid_svelte.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video> </div> </div> <h1 id="building-a-dynamic-image-grid-with-svelte-creating-smooth-card-transitions">Building a Dynamic Image Grid with Svelte: Creating Smooth Card Transitions</h1>
+<p>Creating engaging user interfaces often requires a delicate balance between functionality and visual appeal. In this article, we’ll explore how to build a dynamic image grid component using Svelte that not only manages state efficiently but also provides smooth, eye-catching transitions as images swap in and out.</p>
+<h2 id="the-vision">The Vision</h2>
+<p>Imagine a grid of images that periodically refreshes itself, with individual cards smoothly flipping to reveal new images.</p>
+<p>This creates an engaging display perfect for showcasing team members, product catalogs, or any collection of images that’s larger than what can be shown at once.
+I decided to build this with Svelte because, why not ?</p>
+<p>More seriously, I find the svelte model to be simpler and more intuitive so given the choice, especially on a small project like this one, that’s what I’ll default to.</p>
+<p>As you will see a little further, svelte makes dealing with a lot of small and intricate state changes really simple compared to other solutions.
+There are less ways to mess things up.</p>
+<h2 id="core-components">Core Components</h2>
+<p>Our implementation consists of two main Svelte components:</p>
+<ol>
+<li><code>App.svelte</code> - The main component that manages the grid and orchestrates image swapping</li>
+<li><code>MemberImageCard.svelte</code> - Individual cards that handle the flip animation and image display</li>
+</ol>
+<h2 id="state-management-the-brain-behind-the-grid">State Management: The Brain Behind the Grid</h2>
+<p>The heart of our widget lies in its state management. We need to track several pieces of information:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="typescript"><code><span class="line"><span style="color:#F97583">let</span><span style="color:#E1E4E8"> allImages</span><span style="color:#F97583">:</span><span style="color:#B392F0"> Image</span><span style="color:#E1E4E8">[]; </span><span style="color:#6A737D">// All available images</span></span>
+<span class="line"><span style="color:#F97583">let</span><span style="color:#E1E4E8"> imagesToUse</span><span style="color:#F97583">:</span><span style="color:#B392F0"> Image</span><span style="color:#E1E4E8">[] </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> []; </span><span style="color:#6A737D">// Initial grid images</span></span>
+<span class="line"><span style="color:#F97583">let</span><span style="color:#E1E4E8"> imagesInUse</span><span style="color:#F97583">:</span><span style="color:#B392F0"> Image</span><span style="color:#E1E4E8">[] </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> []; </span><span style="color:#6A737D">// Current grid state</span></span>
+<span class="line"><span style="color:#F97583">let</span><span style="color:#E1E4E8"> remainingImages</span><span style="color:#F97583">:</span><span style="color:#B392F0"> Image</span><span style="color:#E1E4E8">[] </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> []; </span><span style="color:#6A737D">// Pool of unused images</span></span>
+<span class="line"><span style="color:#F97583">let</span><span style="color:#E1E4E8"> imagesSwapMap </span><span style="color:#F97583">=</span><span style="color:#F97583"> new</span><span style="color:#B392F0"> Map</span><span style="color:#E1E4E8">&#x3C;</span><span style="color:#79B8FF">number</span><span style="color:#E1E4E8">, </span><span style="color:#B392F0">Image</span><span style="color:#E1E4E8">>(); </span><span style="color:#6A737D">// Tracks pending swaps</span></span>
+<span class="line"></span></code></pre>
+<h3 id="why-track-current-state-separately">Why Track Current State Separately?</h3>
+<p>You might wonder why we maintain <code>imagesInUse</code> separately from <code>imagesToUse</code>. This separation serves several crucial purposes:</p>
+<ol>
+<li>It provides a single source of truth for the current grid state</li>
+<li>It helps prevent duplicate images from appearing in the grid</li>
+<li>It enables efficient updates without full grid re-renders</li>
+<li>It maintains grid integrity during swapping operations</li>
+</ol>
+<h2 id="the-swap-choreography-a-detailed-look">The Swap Choreography: A Detailed Look</h2>
+<p>The image swapping process is a carefully orchestrated sequence that ensures smooth transitions while maintaining grid integrity. Let’s break down the <code>switchImages</code> function step by step:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="typescript"><code><span class="line"><span style="color:#F97583">const</span><span style="color:#B392F0"> switchImages</span><span style="color:#F97583"> =</span><span style="color:#E1E4E8"> () </span><span style="color:#F97583">=></span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#F97583">  let</span><span style="color:#E1E4E8"> newImagesSwapMap </span><span style="color:#F97583">=</span><span style="color:#F97583"> new</span><span style="color:#B392F0"> Map</span><span style="color:#E1E4E8">&#x3C;</span><span style="color:#79B8FF">number</span><span style="color:#E1E4E8">, </span><span style="color:#B392F0">Image</span><span style="color:#E1E4E8">>()</span></span>
+<span class="line"><span style="color:#F97583">  let</span><span style="color:#E1E4E8"> remainingImagesToUse</span></span>
+<span class="line"><span style="color:#F97583">  let</span><span style="color:#E1E4E8"> newRemainingImages</span><span style="color:#F97583">:</span><span style="color:#B392F0"> Image</span><span style="color:#E1E4E8">[]</span></span>
+<span class="line"></span></code></pre>
+<h3 id="1-selecting-images-from-the-pool">1. Selecting Images from the Pool</h3>
+<p>First, we need to determine which images from our remaining pool will be used for swapping:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="typescript"><code><span class="line"><span style="color:#F97583">if</span><span style="color:#E1E4E8"> (remainingImages.</span><span style="color:#79B8FF">length</span><span style="color:#F97583"> &#x3C;=</span><span style="color:#79B8FF"> NUMBER_OF_IMAGES_TO_SWITCH</span><span style="color:#E1E4E8">) {</span></span>
+<span class="line"><span style="color:#6A737D"> // If we have fewer remaining images than needed, use all of them</span></span>
+<span class="line"><span style="color:#E1E4E8"> remainingImagesToUse </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> remainingImages.</span><span style="color:#B392F0">slice</span><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">0</span><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#E1E4E8"> newRemainingImages </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> [];</span></span>
+<span class="line"><span style="color:#E1E4E8">} </span><span style="color:#F97583">else</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#6A737D"> // Take the last N images from the remaining pool</span></span>
+<span class="line"><span style="color:#E1E4E8"> remainingImagesToUse </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> remainingImages.</span><span style="color:#B392F0">slice</span><span style="color:#E1E4E8">(</span><span style="color:#F97583">-</span><span style="color:#79B8FF">NUMBER_OF_IMAGES_TO_SWITCH</span><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#6A737D"> // Keep the rest for future swaps</span></span>
+<span class="line"><span style="color:#E1E4E8"> newRemainingImages </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> remainingImages.</span><span style="color:#B392F0">slice</span><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">0</span><span style="color:#E1E4E8">, </span><span style="color:#F97583">-</span><span style="color:#79B8FF">NUMBER_OF_IMAGES_TO_SWITCH</span><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span>
+<span class="line"></span></code></pre>
+<p>This code handles two scenarios:</p>
+<ul>
+<li>If we’re running low on remaining images, we use all of them</li>
+<li>Otherwise, we take the last N images from our pool, where N is <code>NUMBER_OF_IMAGES_TO_SWITCH</code></li>
+</ul>
+<h3 id="2-choosing-grid-positions">2. Choosing Grid Positions</h3>
+<p>Next, we randomly select positions in the grid where we’ll swap images:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="typescript"><code><span class="line"><span style="color:#E1E4E8">indexesToSwap </span><span style="color:#F97583">=</span><span style="color:#B392F0"> Array</span><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">NUMBER_OF_IMAGES_TO_SWITCH</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#E1E4E8"> .</span><span style="color:#B392F0">fill</span><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">null</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#E1E4E8"> .</span><span style="color:#B392F0">map</span><span style="color:#E1E4E8">(() </span><span style="color:#F97583">=></span><span style="color:#E1E4E8"> Math.</span><span style="color:#B392F0">floor</span><span style="color:#E1E4E8">(Math.</span><span style="color:#B392F0">random</span><span style="color:#E1E4E8">() </span><span style="color:#F97583">*</span><span style="color:#79B8FF"> NUMBER_OF_IMAGES_TO_USE</span><span style="color:#E1E4E8">));</span></span>
+<span class="line"></span></code></pre>
+<p>This creates an array of random indexes within our grid size. For example, if <code>NUMBER_OF_IMAGES_TO_SWITCH</code> is 1 and <code>NUMBER_OF_IMAGES_TO_USE</code> is 16, we might get <code>[7]</code>, indicating we’ll swap the image at position 7 in the grid.</p>
+<h3 id="3-preventing-duplicates">3. Preventing Duplicates</h3>
+<p>Before performing any swap, we check if the new image is already displayed:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="typescript"><code><span class="line"><span style="color:#F97583">const</span><span style="color:#B392F0"> imageIsInUse</span><span style="color:#F97583"> =</span><span style="color:#E1E4E8"> (</span><span style="color:#FFAB70">image</span><span style="color:#F97583">:</span><span style="color:#B392F0"> Image</span><span style="color:#E1E4E8">) </span><span style="color:#F97583">=></span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#F97583"> const</span><span style="color:#79B8FF"> inUse</span><span style="color:#F97583"> =</span><span style="color:#E1E4E8"> imagesInUse.</span><span style="color:#B392F0">find</span><span style="color:#E1E4E8">((</span><span style="color:#FFAB70">img</span><span style="color:#F97583">:</span><span style="color:#B392F0"> Image</span><span style="color:#E1E4E8">) </span><span style="color:#F97583">=></span><span style="color:#E1E4E8"> image.picture_url </span><span style="color:#F97583">===</span><span style="color:#E1E4E8"> img.picture_url);</span></span>
+<span class="line"><span style="color:#F97583"> return</span><span style="color:#E1E4E8"> inUse;</span></span>
+<span class="line"><span style="color:#E1E4E8">};</span></span>
+<span class="line"></span></code></pre>
+<p>This function prevents the same image from appearing multiple times in our grid.</p>
+<h3 id="4-the-swap-operation">4. The Swap Operation</h3>
+<p>Now comes the core swapping logic:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="typescript"><code><span class="line"><span style="color:#F97583">for</span><span style="color:#E1E4E8"> (</span><span style="color:#F97583">let</span><span style="color:#E1E4E8"> i </span><span style="color:#F97583">=</span><span style="color:#79B8FF"> 0</span><span style="color:#E1E4E8">; i </span><span style="color:#F97583">&#x3C;</span><span style="color:#E1E4E8"> indexesToSwap.</span><span style="color:#79B8FF">length</span><span style="color:#E1E4E8">; i</span><span style="color:#F97583">++</span><span style="color:#E1E4E8">) {</span></span>
+<span class="line"><span style="color:#F97583"> let</span><span style="color:#E1E4E8"> index </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> indexesToSwap[i];</span></span>
+<span class="line"><span style="color:#F97583"> let</span><span style="color:#E1E4E8"> imageToSwap </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> imagesInUse[index]; </span><span style="color:#6A737D">// Current image in the grid</span></span>
+<span class="line"><span style="color:#F97583"> let</span><span style="color:#E1E4E8"> imageToSwapWith </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> remainingImagesToUse.</span><span style="color:#B392F0">pop</span><span style="color:#E1E4E8">(); </span><span style="color:#6A737D">// New image to display</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583"> if</span><span style="color:#E1E4E8"> (imageToSwapWith </span><span style="color:#F97583">&#x26;&#x26;</span><span style="color:#F97583"> !</span><span style="color:#B392F0">imageIsInUse</span><span style="color:#E1E4E8">(imageToSwapWith)) {</span></span>
+<span class="line"><span style="color:#6A737D">  // Record the swap in our map</span></span>
+<span class="line"><span style="color:#E1E4E8">  newImagesSwapMap.</span><span style="color:#B392F0">set</span><span style="color:#E1E4E8">(index, imageToSwapWith);</span></span>
+<span class="line"><span style="color:#6A737D">  // Update the swap map to trigger component updates</span></span>
+<span class="line"><span style="color:#E1E4E8">  imagesSwapMap </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> newImagesSwapMap;</span></span>
+<span class="line"><span style="color:#6A737D">  // Update the grid state</span></span>
+<span class="line"><span style="color:#E1E4E8">  imagesInUse[index] </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> imageToSwapWith;</span></span>
+<span class="line"><span style="color:#6A737D">  // Add the old image back to the pool</span></span>
+<span class="line"><span style="color:#E1E4E8">  newRemainingImages.</span><span style="color:#B392F0">unshift</span><span style="color:#E1E4E8">(imageToSwap);</span></span>
+<span class="line"><span style="color:#E1E4E8"> } </span><span style="color:#F97583">else</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#F97583">  return</span><span style="color:#E1E4E8">; </span><span style="color:#6A737D">// Skip if the image is already in use</span></span>
+<span class="line"><span style="color:#E1E4E8"> }</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span>
+<span class="line"></span></code></pre>
+<p>Let’s break down what happens in each swap:</p>
+<ol>
+<li>We get the randomly selected position (<code>index</code>)</li>
+<li>We identify the current image at that position (<code>imageToSwap</code>)</li>
+<li>We take a new image from our pool (<code>imageToSwapWith</code>)</li>
+<li>If the new image is valid and not already displayed:
+<ul>
+<li>We record the swap in <code>imagesSwapMap</code></li>
+<li>We update the grid state in <code>imagesInUse</code></li>
+<li>We add the old image back to the pool at the beginning</li>
+</ul>
+</li>
+</ol>
+<h3 id="5-finalizing-the-state">5. Finalizing the State</h3>
+<p>After performing all swaps, we update our state:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="typescript"><code><span class="line"><span style="color:#E1E4E8">remainingImages </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> newRemainingImages;</span></span>
+<span class="line"><span style="color:#E1E4E8">imagesInUse </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> imagesInUse;</span></span>
+<span class="line"></span></code></pre>
+<h3 id="6-triggering-the-animation">6. Triggering the Animation</h3>
+<p>The <code>imagesSwapMap</code> is the key to triggering animations. When it updates, the relevant <code>MemberImageCard</code> components react:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="typescript"><code><span class="line"><span style="color:#B392F0">$</span><span style="color:#E1E4E8">: {</span></span>
+<span class="line"><span style="color:#F97583"> if</span><span style="color:#E1E4E8"> (imagesSwapMap.</span><span style="color:#B392F0">has</span><span style="color:#E1E4E8">(index)) {</span></span>
+<span class="line"><span style="color:#E1E4E8">  frontImageLoaded </span><span style="color:#F97583">=</span><span style="color:#79B8FF"> false</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#E1E4E8">  backImageLoaded </span><span style="color:#F97583">=</span><span style="color:#79B8FF"> false</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#F97583">  let</span><span style="color:#E1E4E8"> currentFace </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> faceOnDisplay;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6A737D">  // Load new image on the opposite face</span></span>
+<span class="line"><span style="color:#E1E4E8">  backImageUrl </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> currentFace </span><span style="color:#F97583">===</span><span style="color:#9ECBFF"> 'front'</span><span style="color:#F97583"> &#x26;&#x26;</span><span style="color:#E1E4E8"> imagesSwapMap.</span><span style="color:#B392F0">get</span><span style="color:#E1E4E8">(index).picture_url;</span></span>
+<span class="line"><span style="color:#E1E4E8">  frontImageUrl </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> currentFace </span><span style="color:#F97583">===</span><span style="color:#9ECBFF"> 'back'</span><span style="color:#F97583"> &#x26;&#x26;</span><span style="color:#E1E4E8"> imagesSwapMap.</span><span style="color:#B392F0">get</span><span style="color:#E1E4E8">(index).picture_url;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6A737D">  // Trigger the flip</span></span>
+<span class="line"><span style="color:#E1E4E8">  faceOnDisplay </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> faceOnDisplay </span><span style="color:#F97583">===</span><span style="color:#9ECBFF"> 'front'</span><span style="color:#F97583"> ?</span><span style="color:#9ECBFF"> 'back'</span><span style="color:#F97583"> :</span><span style="color:#9ECBFF"> 'front'</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#E1E4E8"> }</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span>
+<span class="line"></span></code></pre>
+<p>This reactive statement in <code>MemberImageCard</code>:</p>
+<ol>
+<li>Detects when its position is involved in a swap</li>
+<li>Loads the new image on the opposite face of the card</li>
+<li>Triggers the flip animation by changing <code>faceOnDisplay</code></li>
+<li>Resets image loading states for smooth transitions</li>
+</ol>
+<p>The beauty of this system is that it maintains a smooth user experience while ensuring:</p>
+<ul>
+<li>No duplicate images appear in the grid</li>
+<li>Images cycle through efficiently</li>
+<li>The grid always maintains its structure</li>
+<li>Animations occur smoothly and predictably</li>
+<li>Failed swaps (due to duplicates) are handled gracefully</li>
+</ul>
+<h2 id="the-flip-animation-making-it-smooth">The Flip Animation: Making It Smooth</h2>
+<p>Each <code>MemberImageCard</code> component manages its own flip animation using CSS transforms and transitions. The magic happens through a combination of state tracking and CSS:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="typescript"><code><span class="line"><span style="color:#F97583">let</span><span style="color:#E1E4E8"> faceOnDisplay</span><span style="color:#F97583">:</span><span style="color:#9ECBFF"> 'front'</span><span style="color:#F97583"> |</span><span style="color:#9ECBFF"> 'back'</span><span style="color:#F97583"> =</span><span style="color:#9ECBFF"> 'front'</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#F97583">let</span><span style="color:#E1E4E8"> backImageUrl </span><span style="color:#F97583">=</span><span style="color:#9ECBFF"> ''</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#F97583">let</span><span style="color:#E1E4E8"> frontImageUrl </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> member.picture_url;</span></span>
+<span class="line"></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="css"><code><span class="line"><span style="color:#B392F0">.card</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#79B8FF"> transform-style</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">preserve-3d</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#79B8FF"> transition</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">all</span><span style="color:#79B8FF"> 0.6</span><span style="color:#F97583">s</span><span style="color:#79B8FF"> ease-in-out</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#B392F0">.card</span><span style="color:#E1E4E8">[</span><span style="color:#B392F0">data-face</span><span style="color:#F97583">=</span><span style="color:#9ECBFF">'back'</span><span style="color:#E1E4E8">] {</span></span>
+<span class="line"><span style="color:#79B8FF"> transform</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">rotateY</span><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">180</span><span style="color:#F97583">deg</span><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span>
+<span class="line"></span></code></pre>
+<p>When an image needs to swap, we:</p>
+<ol>
+<li>Load the new image on the reverse side</li>
+<li>Trigger the flip animation</li>
+<li>Clean up the old image once the flip is complete</li>
+</ol>
+<h2 id="progressive-loading-for-better-ux">Progressive Loading for Better UX</h2>
+<p>To enhance the user experience, we implemented a progressive loading effect:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="css"><code><span class="line"><span style="color:#B392F0">.image</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#79B8FF"> filter</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">blur</span><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">20</span><span style="color:#F97583">px</span><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#79B8FF"> opacity</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">0</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#79B8FF"> transition</span><span style="color:#E1E4E8">:</span></span>
+<span class="line"><span style="color:#E1E4E8">  filter </span><span style="color:#79B8FF">0.3</span><span style="color:#F97583">s</span><span style="color:#79B8FF"> ease-out</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">  opacity </span><span style="color:#79B8FF">0.3</span><span style="color:#F97583">s</span><span style="color:#79B8FF"> ease-out</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#B392F0">.front-loaded</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#B392F0">.back-loaded</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#79B8FF"> filter</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">blur</span><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">0</span><span style="color:#F97583">px</span><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#79B8FF"> opacity</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">1</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span>
+<span class="line"></span></code></pre>
+<p>Images start blurred and fade in smoothly once loaded, providing a polished look and feel.</p>
+<h2 id="scheduling-the-dance">Scheduling the Dance</h2>
+<p>The regular image swaps are scheduled using Svelte’s <code>onMount</code> lifecycle function:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="typescript"><code><span class="line"><span style="color:#B392F0">onMount</span><span style="color:#E1E4E8">(() </span><span style="color:#F97583">=></span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#F97583"> const</span><span style="color:#79B8FF"> interval</span><span style="color:#F97583"> =</span><span style="color:#B392F0"> setInterval</span><span style="color:#E1E4E8">(switchImages, </span><span style="color:#79B8FF">3000</span><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#F97583"> return</span><span style="color:#E1E4E8"> () </span><span style="color:#F97583">=></span><span style="color:#B392F0"> clearInterval</span><span style="color:#E1E4E8">(interval);</span></span>
+<span class="line"><span style="color:#E1E4E8">});</span></span>
+<span class="line"></span></code></pre>
+<h2 id="conclusion">Conclusion</h2>
+<p>This implementation showcases the power of Svelte’s reactive capabilities combined with modern CSS transforms to create a dynamic, engaging UI component. The careful separation of concerns between state management and visual presentation results in code that’s both maintainable and performant.</p>
+<p>The next time you need to showcase a large collection of images in a limited space, consider implementing a similar approach. The combination of smooth animations and dynamic content creates an engaging user experience that keeps viewers interested.</p>  </div> </article> </main> <div class="shrink-0 w-[280px] pt-28 hidden md:block"> <nav class="toc sticky top-4 py-2 lg:-ml-3" data-astro-cid-awg4b4gg> <h3 class="font-bold text-skin-base uppercase mb-2 px-3 text-sm" data-astro-cid-awg4b4gg>On This Page</h3> <ul class="toc-list max-h-[calc(100vh-70px)] overflow-auto text-[.825rem] text-[var(--color-content-secondary)]" data-astro-cid-awg4b4gg> <li data-astro-cid-awg4b4gg> <a class="block font-bold py-1.5 px-3 border-l border-transparent text-inherit leading-tight text-skin-muted" href="#the-vision" data-astro-cid-awg4b4gg> The Vision </a>  </li><li data-astro-cid-awg4b4gg> <a class="block font-bold py-1.5 px-3 border-l border-transparent text-inherit leading-tight text-skin-muted" href="#core-components" data-astro-cid-awg4b4gg> Core Components </a>  </li><li data-astro-cid-awg4b4gg> <a class="block font-bold py-1.5 px-3 border-l border-transparent text-inherit leading-tight text-skin-muted" href="#state-management-the-brain-behind-the-grid" data-astro-cid-awg4b4gg> State Management: The Brain Behind the Grid </a> <ul data-astro-cid-awg4b4gg> <li data-astro-cid-awg4b4gg> <a class="block py-1.5 pl-6 pr-3 border-l border-transparent text-inherit leading-tight text-skin-base" href="#why-track-current-state-separately" data-astro-cid-awg4b4gg> Why Track Current State Separately? </a> </li> </ul> </li><li data-astro-cid-awg4b4gg> <a class="block font-bold py-1.5 px-3 border-l border-transparent text-inherit leading-tight text-skin-muted" href="#the-swap-choreography-a-detailed-look" data-astro-cid-awg4b4gg> The Swap Choreography: A Detailed Look </a> <ul data-astro-cid-awg4b4gg> <li data-astro-cid-awg4b4gg> <a class="block py-1.5 pl-6 pr-3 border-l border-transparent text-inherit leading-tight text-skin-base" href="#1-selecting-images-from-the-pool" data-astro-cid-awg4b4gg> 1. Selecting Images from the Pool </a> </li><li data-astro-cid-awg4b4gg> <a class="block py-1.5 pl-6 pr-3 border-l border-transparent text-inherit leading-tight text-skin-base" href="#2-choosing-grid-positions" data-astro-cid-awg4b4gg> 2. Choosing Grid Positions </a> </li><li data-astro-cid-awg4b4gg> <a class="block py-1.5 pl-6 pr-3 border-l border-transparent text-inherit leading-tight text-skin-base" href="#3-preventing-duplicates" data-astro-cid-awg4b4gg> 3. Preventing Duplicates </a> </li><li data-astro-cid-awg4b4gg> <a class="block py-1.5 pl-6 pr-3 border-l border-transparent text-inherit leading-tight text-skin-base" href="#4-the-swap-operation" data-astro-cid-awg4b4gg> 4. The Swap Operation </a> </li><li data-astro-cid-awg4b4gg> <a class="block py-1.5 pl-6 pr-3 border-l border-transparent text-inherit leading-tight text-skin-base" href="#5-finalizing-the-state" data-astro-cid-awg4b4gg> 5. Finalizing the State </a> </li><li data-astro-cid-awg4b4gg> <a class="block py-1.5 pl-6 pr-3 border-l border-transparent text-inherit leading-tight text-skin-base" href="#6-triggering-the-animation" data-astro-cid-awg4b4gg> 6. Triggering the Animation </a> </li> </ul> </li><li data-astro-cid-awg4b4gg> <a class="block font-bold py-1.5 px-3 border-l border-transparent text-inherit leading-tight text-skin-muted" href="#the-flip-animation-making-it-smooth" data-astro-cid-awg4b4gg> The Flip Animation: Making It Smooth </a>  </li><li data-astro-cid-awg4b4gg> <a class="block font-bold py-1.5 px-3 border-l border-transparent text-inherit leading-tight text-skin-muted" href="#progressive-loading-for-better-ux" data-astro-cid-awg4b4gg> Progressive Loading for Better UX </a>  </li><li data-astro-cid-awg4b4gg> <a class="block font-bold py-1.5 px-3 border-l border-transparent text-inherit leading-tight text-skin-muted" href="#scheduling-the-dance" data-astro-cid-awg4b4gg> Scheduling the Dance </a>  </li><li data-astro-cid-awg4b4gg> <a class="block font-bold py-1.5 px-3 border-l border-transparent text-inherit leading-tight text-skin-muted" href="#conclusion" data-astro-cid-awg4b4gg> Conclusion </a>  </li> </ul> </nav>  </div> </div>  </div> </body></html> <script async>
+	const anchors = document.querySelectorAll('.prose h2[id], .prose h3[id]');
+	const links = document.querySelectorAll('nav.toc ul li a');
+
+	function observeToc() {
+		if (typeof anchors != 'undefined' && anchors != null && typeof links != 'undefined' && links != null) {
+			let scrollTop = window.scrollY;
+
+			// highlight the last scrolled-to: set everything inactive first
+			for (const link of links) {
+				link.classList.add('border-transparent', 'text-inherit');
+				link.classList.remove('bg-[var(--background-surface-color)]', 'border-[var(--soft-border-color)]', 'text-[var(--link-color)]');
+			}
+			// then iterate backwards, on the first match highlight it and break
+			for (var i = anchors.length - 1; i >= 0; i--) {
+				if (scrollTop > anchors[i].offsetTop - 80) {
+					links[i].classList.remove('border-transparent', 'text-inherit');
+					links[i].classList.add('bg-[var(--background-surface-color)]', 'border-[var(--soft-border-color)]', 'text-[var(--link-color)]');
+					break;
+				}
+			}
+		}
+	}
+
+	window.addEventListener('scroll', (event) => {
+		observeToc(event);
+	});
+	window.addEventListener('hashchange', (event) => {
+		observeToc(event);
+	});
+</script>
