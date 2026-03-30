@@ -6,7 +6,7 @@ import { autoNewTabExternalLinks } from "./src/autoNewTabExternalLinks";
 import astroIcon from "astro-icon";
 import partytown from "@astrojs/partytown";
 import react from "@astrojs/react";
-import vercel from "@astrojs/vercel";
+import vercel from "@astrojs/vercel/serverless";
 
 export default defineConfig({
   site: "https://dimognetehem.vercel.app",
