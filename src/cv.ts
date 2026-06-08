@@ -35,12 +35,6 @@ export const CV = {
         "username": "dimognetehem",
         "url": "https://gitlab.com/dimognetehem",
       },
-      {
-        "network": "CV",
-        "icon": "mdi:resume",
-        "url":
-          "https://app.enhancv.com/share/5f1e233d/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic",
-      },
     ],
   },
   "images": {
@@ -118,6 +112,43 @@ export const CV = {
     },
   ],
   "work": [
+    {
+      "name": "LIKUP DIGITAL LTD",
+      "position": "Fullstack Engineer | AI Engineer",
+      "location_type": "Remote",
+      "location": "71-75 Shelton Street, Covent Garden, WC2H 9JQ London",
+      "url": "http://www.likupdigital.com",
+      "startDate": "2026-4-01",
+      /* "endDate": "", */
+      "summary":
+        "I am currently working on an innovative solution designed to empower entrepreneurs, enterprises or individuals to better manage their customer relationships by enabling them to have one or more AI agents interact with their customers via WhatsApp, Instagram, or other platforms as if the agents were them, which would allow them to significantly improve their productivity.",
+      "highlights": [],
+      "responsibilities": [
+        "Designed, implemented and integrated the payment system of the platform with Stripe, Moneroo and PayPal",
+        "Build and integrated n8n workflows to deals with the differents workflows of the application (Agent responses, Customer Interaction, Invoice, Mailing, etc.)",
+        "Developed backend services and API connectors for different integrations",
+        "Developed frontend modules and integrated it with the backend services",
+      ],
+/*       "achievements": [
+        "Successfully built a functional RAG pipeline using FastAPI, LangChain and Llama3",
+        "Implemented efficient vector search using FAISS for technical documentation",
+        "Containerized the entire backend application stack for seamless deployment on HuggingFace",
+      ], */
+      "skills": {
+        "NestJS": "simple-icons:nestjs",
+        "n8n": "simple-icons:n8n",
+        "Next.js": "simple-icons:nextdotjs",
+        "Redux Toolkit": "simple-icons:redux",
+        "Docker": "simple-icons:docker",
+        "MongoDB": "simple-icons:mongodb",
+        "Node.js": "simple-icons:nodedotjs",
+        "Express.js": "simple-icons:express",
+        "ReactJS": "simple-icons:react",
+        "Prisma": "simple-icons:prisma",
+        "Swagger": "simple-icons:swagger",
+        "Microsoft Azure": "mdi:azure",
+      },
+    },
     {
       "name": "ONA IT CONSULTING",
       "position": "IT Business Developer Intern",
@@ -607,8 +638,8 @@ export const CV = {
   "references": [],
   "projects": [
     {
-      "name": "OpenAI-ChatBot-UI",
-      "github": "",
+      "name": "OpenAI Chatbot-UI App Deployment in Amazon EKS with Jenkins and Terraform",
+      "github": "https://github.com/dimognetehem/OpenAI-ChatBot-UI",
       "image": {
         "url":
           "https://i0.hdslb.com/bfs/article/985e2caa8266dee4b9861ee6a341886d480025691.png@1e_1c.webp",
@@ -622,15 +653,14 @@ export const CV = {
         "/seminar_chat_preview_light.png",
       ],
       "isActive": true,
-      "description": "The AI chatbot of the Seminar platform.",
+      "description": "A modern ChatBot UI application deployed using a comprehensive DevSecOps pipeline. This project demonstrates the implementation of security-first CI/CD practices, infrastructure as code, and cloud-native technologies.",
       "highlights": [
-        "Built a cron service to collect and store the platform's content.",
         "Built a RAG (Retrieval Augmented Generation) pipeline for answering questions based on the platform's content.",
         "Built the Chatbot user interface with NextJs.",
       ],
-      "url": "https://seminar.community",
+      "url": "",
     },
-    {
+/*     {
       "name": "Anchor",
       "github": "",
       "image": {
@@ -685,7 +715,7 @@ export const CV = {
         "Built the application dashboard with ReactJs.",
         "Built many financial and judiciary data collection services.",
       ],
-      "url": "https://identitequebec.ca/crediscan",
+      "url": "",
     },
     {
       "name": "Promethee",
@@ -709,7 +739,7 @@ export const CV = {
         "Led a team of four developers during the development.",
         "Built API services and user interfaces.",
       ],
-      "url": "https://djemobtp.org/site",
-    },
+      "url": "",
+    }, */
   ],
 };
