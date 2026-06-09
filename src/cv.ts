@@ -4,7 +4,7 @@ export const CV = {
   "basics": {
     "name": "Emmanuel Franck Dimogne Tehem",
     "label": "Software Engineer",
-    "image": "/portrait_blueish.png",
+    "image": "/portrait_blueish.webp",
     "email": "dimognetehem@gmail.com",
     "url": "https://dimognetehem.vercel.app",
     "summary":
