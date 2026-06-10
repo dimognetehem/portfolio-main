@@ -6,7 +6,7 @@ export const CV = {
     "label": "Software Engineer",
     "image": "/portrait_blueish.webp",
     "email": "dimognetehem@gmail.com",
-    "url": "https://dimognetehem.vercel.app",
+    "url": "https://dimognetehem.dev",
     "summary":
       "Passionate about technological innovation, I specialize in designing scalable web and mobile applications. My expertise covers the entire development lifecycle, from Backend to Frontend, with a strong focus on Cloud, DevOps, and AI integration to ensure high-performance, automated, and intelligent systems.",
     "theme": "blue",
@@ -125,9 +125,9 @@ export const CV = {
       "highlights": [],
       "responsibilities": [
         "Designed, implemented and integrated the payment system of the platform with Stripe, Moneroo and PayPal",
-        "Build and integrated n8n workflows to deals with the differents workflows of the application (Agent responses, Customer Interaction, Invoice, Mailing, etc.)",
+        "Build and integrated n8n workflows to deals with the different workflows of the application (Agent responses, Customer Interaction, Invoice, Mailing, etc.)",
         "Developed backend services and API connectors for different integrations",
-        "Developed frontend modules and integrated it with the backend services",
+        "Developed frontend modules and integrated them with the backend services",
       ],
 /*       "achievements": [
         "Successfully built a functional RAG pipeline using FastAPI, LangChain and Llama3",
